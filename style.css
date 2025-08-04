@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4a00e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8e2de2;
+}
+
+.horarios div {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.horarios div.ocupado {
+  background-color: #ff6b6b;
+  cursor: not-allowed;
+}
+
+#mensagem {
+  margin-top: 20px;
+  font-size: 16px;
+}
