@@ -54,6 +54,16 @@ app.post("/agendar", (req, res) => {
   );
 });
 
+// Endpoint para listar todos os agendamentos
+app.get("/agendamentos", (req, res) => {
+  db.all("SELECT * FROM agendamentos", [], (err, rows) => {
+    if (err) {
+      return res.status(500).send("Erro no servidor");
+    }
+    res.json(rows); // Envia os agendamentos como resposta
+  });
+});
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
